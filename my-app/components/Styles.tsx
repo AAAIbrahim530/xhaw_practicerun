@@ -1,7 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native';
-
-const { width } = Dimensions.get('window');
-const isDesktop = width > 768;
+import { StyleSheet } from 'react-native';
 
 export const COLORS = {
   bgBackground: '#0B0C10',
@@ -16,15 +13,15 @@ export const globalStyles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.bgBackground,
-    paddingHorizontal: isDesktop ? '10%' : 20,
-    paddingTop: 40,
+    paddingHorizontal: 20,
+    paddingTop: 20,
   },
   scrollContainer: {
     paddingBottom: 40,
   },
   // Typography
   titleLarge: {
-    fontSize: isDesktop ? 36 : 26,
+    fontSize: 26,
     fontWeight: 'bold',
     color: COLORS.textMain,
     textAlign: 'center',
@@ -44,7 +41,7 @@ export const globalStyles = StyleSheet.create({
     color: COLORS.textSecondary,
     lineHeight: 20,
   },
-  // Components
+  // Reusable Elements
   card: {
     backgroundColor: COLORS.surfaceCard,
     borderRadius: 12,
@@ -52,7 +49,7 @@ export const globalStyles = StyleSheet.create({
     marginBottom: 16,
     borderWidth: 1,
     borderColor: COLORS.accentPurple,
-    // Soft neon glow effect
+    // Cyber Neon Glow Effect
     shadowColor: COLORS.accentPurple,
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.4,
@@ -92,18 +89,9 @@ export const globalStyles = StyleSheet.create({
     fontWeight: 'bold',
     letterSpacing: 1,
   },
-  // Layout Helpers
   rowSpaceBetween: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-  },
-  webSplitLayout: {
-    flexDirection: isDesktop ? 'row' : 'column',
-    justifyContent: 'space-between',
-  },
-  webColumn: {
-    flex: isDesktop ? 0.48 : 1,
-    width: '100%',
   },
 });
