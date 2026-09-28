@@ -12,11 +12,12 @@ export default function Contact() {
         {/* Card 1: Map Element */}
         <View style={[globalStyles.card, contactStyles.flexRow]}>
           <View style={contactStyles.mapGraphicPlaceholder}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.447761369979!2d18.461206076471463!3d-33.98103097318404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc43005a118f55%3A0xe4a33c1b26349c65!2sCavendish%20Mall!5e0!3m2!1sen!2sza!4v1790603520556!5m2!1sen!2sza" width="600" height="450" style={{border:0}} allowFullScreen={true} loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             <View style={contactStyles.mapPin} />
           </View>
           <View style={{ flex: 1 }}>
             <Text style={contactStyles.cardHeading}>Visit Us:</Text>
-            <Text style={globalStyles.bodyText}>[Location Placeholder], Johannesburg</Text>
+            <Text style={globalStyles.bodyText}>24 Mavin Avenue, Sandton, Johannesburg</Text>
           </View>
         </View>
 
